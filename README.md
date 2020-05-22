@@ -21,3 +21,5 @@ This application helps keep track of fitness by tracking workout progress on a c
 * Express
 
 ## Deployment
+
+https://murmuring-island-19260.herokuapp.com/exercise?id=5ec7d741c624cd0017cabbb3
