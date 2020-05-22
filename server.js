@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 
@@ -8,7 +9,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
